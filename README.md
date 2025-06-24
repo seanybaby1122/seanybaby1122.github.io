@@ -1,7 +1,5 @@
 # # prompt: seanybaby1122.github.io
 
-# There is no direct way to "open" a website within a Colab notebook's runtime.
-# However, you can use Python to make a request to the website or display it using an iframe.
 
 # Method 1: Make a request to the website (to check if it's accessible or get content)
 import requests
