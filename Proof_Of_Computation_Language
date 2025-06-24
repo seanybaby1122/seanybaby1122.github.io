@@ -1,0 +1,85 @@
+# prompt: Sequence Analysis:
+#    * Initial Failure: The ProofOfComputationalLanguage sequence failing immediately with "Invalid transition: 'SEM_PROOF' not allowed from state 'INITIAL' at step 1" is expected and good. It highlights that your current semantic_state_machine doesn't define a starting point for SEM_PROOF.
+#    * Refinement Opportunity: To make ProofOfComputationalLanguage a "valid utterance" in this system,
+# --- Testing a valid sequence ---
+# Transitioned to state: PROOF_INITIATED
+# Transitioned to state: PROOF_VALIDATED
+# Transitioned to state: FINAL
+# Sequence completed successfully.
+# --- Testing a sequence with refinement ---
+# Transitioned to state: PROOF_INITIATED
+# Transitioned to state: PROOF_INITIATED
+# Transitioned to state: PROOF_VALIDATED
+# Transitioned to state: FINAL
+# Sequence completed successfully.
+# --- Testing an invalid sequence (starting incorrectly) ---
+# Sequence failed as expected: Invalid transition: 'SEM_VALIDATION' not allowed from state 'INITIAL'
+
+class StateMachine:
+    def __init__(self, transitions):
+        self.transitions = transitions
+        self.state = 'INITIAL'
+        self.sequence = []
+
+    def process_event(self, event):
+        if self.state not in self.transitions or event not in self.transitions[self.state]:
+            raise ValueError(f"Invalid transition: '{event}' not allowed from state '{self.state}'")
+
+        next_state = self.transitions[self.state][event]
+        self.state = next_state
+        self.sequence.append(event)
+        print(f"Transitioned to state: {self.state}")
+
+    def reset(self):
+        self.state = 'INITIAL'
+        self.sequence = []
+
+# Define the state machine for the ProofOfComputationalLanguage sequence
+semantic_state_machine = {
+    'INITIAL': {
+        'SEM_INITIATE_PROOF': 'PROOF_INITIATED'
+    },
+    'PROOF_INITIATED': {
+        'SEM_VALIDATION': 'PROOF_VALIDATED',
+        'SEM_INITIATE_PROOF': 'PROOF_INITIATED' # Allow re-initiating from this state
+    },
+    'PROOF_VALIDATED': {
+        'SEM_FINALIZE': 'FINAL'
+    },
+    'FINAL': {
+        # No transitions from final state in this simple example
+    }
+}
+
+# --- Testing a valid sequence ---
+print("--- Testing a valid sequence ---")
+machine = StateMachine(semantic_state_machine)
+try:
+    machine.process_event('SEM_INITIATE_PROOF')
+    machine.process_event('SEM_VALIDATION')
+    machine.process_event('SEM_FINALIZE')
+    print("Sequence completed successfully.")
+except ValueError as e:
+    print(f"Sequence failed: {e}")
+
+# --- Testing a sequence with refinement ---
+print("--- Testing a sequence with refinement ---")
+machine.reset()
+try:
+    machine.process_event('SEM_INITIATE_PROOF')
+    machine.process_event('SEM_INITIATE_PROOF') # Refinement step (re-initiate)
+    machine.process_event('SEM_VALIDATION')
+    machine.process_event('SEM_FINALIZE')
+    print("Sequence completed successfully.")
+except ValueError as e:
+    print(f"Sequence failed: {e}")
+
+
+# --- Testing an invalid sequence (starting incorrectly) ---
+print("--- Testing an invalid sequence (starting incorrectly) ---")
+machine.reset()
+try:
+    machine.process_event('SEM_VALIDATION') # Incorrect start
+    print("Sequence completed successfully.")
+except ValueError as e:
+    print(f"Sequence failed as expected: {e}")
