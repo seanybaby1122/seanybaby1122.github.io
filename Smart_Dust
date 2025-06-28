@@ -1,0 +1,493 @@
+Starting Master Engineering Decoder Microelectronics Device Simulation...
+Simulating data reception and decoding for 20 seconds.
+Decoder Tuning Level (Efficiency): 0.6
+Max Data Points Processed per Interval: 15
+
+--- Simulation Interval 1 at time: 1751064334.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 23.96 °C
+Particles reporting: 10
+Particles with 'warning' status: 2
+Particles with 'error' status: 3
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 4
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064334.196026, 'battery_level': 78.63, 'environmental_hazard_detected': True, 'signal_strength_dbm': -86}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064334.196105, 'temperature_celsius': 26.25, 'light_lux': 593.34, 'movement_detected': True, 'status': 'ok'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064334.1961253, 'temperature_celsius': 21.05, 'light_lux': 156.81, 'movement_detected': True, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 2 at time: 1751064335.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 24.12 °C
+Particles reporting: 10
+Particles with 'warning' status: 2
+Particles with 'error' status: 4
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 4
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064335.1965594, 'battery_level': 28.25, 'environmental_hazard_detected': True, 'signal_strength_dbm': -71}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064335.1966467, 'temperature_celsius': 25.54, 'light_lux': 531.97, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064335.1966763, 'temperature_celsius': 25.84, 'light_lux': 111.1, 'movement_detected': False, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 3 at time: 1751064336.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMTAsQmF0OjUwLjU5LEhhejpGYW...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 24.11 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 3
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064336.196471, 'battery_level': 84.41, 'environmental_hazard_detected': True, 'signal_strength_dbm': -95}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064336.1965744, 'temperature_celsius': 23.09, 'light_lux': 709.64, 'movement_detected': True, 'status': 'warning'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064336.196598, 'temperature_celsius': 24.19, 'light_lux': 545.21, 'movement_detected': False, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 4 at time: 1751064337.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 23.19 °C
+Particles reporting: 10
+Particles with 'warning' status: 3
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 2
+Particles with low battery: 1
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064337.196678, 'battery_level': 35.05, 'environmental_hazard_detected': True, 'signal_strength_dbm': -83}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064337.1967795, 'temperature_celsius': 27.37, 'light_lux': 108.58, 'movement_detected': True, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064337.1968052, 'temperature_celsius': 21.72, 'light_lux': 771.43, 'movement_detected': False, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 5 at time: 1751064338.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMSxCYXQ6NDguOTYsSGF6OkZhbH...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 25.79 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 3
+Particles with low battery: 1
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_2', 'timestamp': 1751064338.1967785, 'temperature_celsius': 28.45, 'light_lux': 823.72, 'movement_detected': True, 'status': 'error'}
+  2: {'particle_id': 'particle_3', 'timestamp': 1751064338.1968327, 'temperature_celsius': 23.53, 'light_lux': 491.74, 'movement_detected': False, 'status': 'warning'}
+  3: {'particle_id': 'particle_4', 'timestamp': 1751064338.1968634, 'battery_level': 83.93, 'environmental_hazard_detected': True, 'signal_strength_dbm': -78}
+--- End of Decoder Output ---
+
+--- Simulation Interval 6 at time: 1751064339.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 24.89 °C
+Particles reporting: 10
+Particles with 'warning' status: 1
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064339.1969616, 'battery_level': 33.14, 'environmental_hazard_detected': False, 'signal_strength_dbm': -61}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064339.1970618, 'temperature_celsius': 23.68, 'light_lux': 441.3, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064339.197085, 'temperature_celsius': 27.12, 'light_lux': 549.27, 'movement_detected': False, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 7 at time: 1751064340.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 24.38 °C
+Particles reporting: 10
+Particles with 'warning' status: 2
+Particles with 'error' status: 3
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 3
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064340.197083, 'battery_level': 29.86, 'environmental_hazard_detected': True, 'signal_strength_dbm': -93}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064340.1971798, 'temperature_celsius': 26.28, 'light_lux': 692.36, 'movement_detected': True, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064340.1972091, 'temperature_celsius': 20.41, 'light_lux': 798.35, 'movement_detected': True, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 8 at time: 1751064341.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 24.55 °C
+Particles reporting: 10
+Particles with 'warning' status: 0
+Particles with 'error' status: 5
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 1
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'battery_level': 32.16, 'environmental_hazard_detected': False, 'signal_strength_dbm': -84, 'timestamp': 1751064341.1975462}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064341.1972926, 'temperature_celsius': 23.19, 'light_lux': 596.9, 'movement_detected': True, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064341.1973588, 'temperature_celsius': 24.85, 'light_lux': 349.77, 'movement_detected': False, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 9 at time: 1751064342.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 25.45 °C
+Particles reporting: 10
+Particles with 'warning' status: 3
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 1
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064342.1973295, 'battery_level': 33.27, 'environmental_hazard_detected': False, 'signal_strength_dbm': -91}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064342.1974225, 'temperature_celsius': 23.44, 'light_lux': 888.05, 'movement_detected': True, 'status': 'warning'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064342.1974487, 'temperature_celsius': 25.16, 'light_lux': 957.53, 'movement_detected': False, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 10 at time: 1751064343.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMTAsQmF0OjE1LjAsSGF6OlRydW...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 25.20 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064343.1974497, 'battery_level': 76.33, 'environmental_hazard_detected': True, 'signal_strength_dbm': -54}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064343.1975355, 'temperature_celsius': 28.52, 'light_lux': 967.47, 'movement_detected': False, 'status': 'ok'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064343.1975594, 'temperature_celsius': 27.48, 'light_lux': 461.6, 'movement_detected': False, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 11 at time: 1751064344.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfNyxCYXQ6MzEuMyxIYXo6VHJ1ZS...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 26.18 °C
+Particles reporting: 9
+Particles with 'warning' status: 0
+Particles with 'error' status: 3
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 1
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064344.1976347, 'battery_level': 32.74, 'environmental_hazard_detected': True, 'signal_strength_dbm': -84}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064344.19773, 'temperature_celsius': 24.03, 'light_lux': 179.33, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064344.1977851, 'temperature_celsius': 29.66, 'light_lux': 594.72, 'movement_detected': False, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 12 at time: 1751064345.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 25.22 °C
+Particles reporting: 10
+Particles with 'warning' status: 4
+Particles with 'error' status: 1
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 2
+Particles with low battery: 1
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064345.1977487, 'battery_level': 31.67, 'environmental_hazard_detected': True, 'signal_strength_dbm': -71}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064345.1978347, 'temperature_celsius': 29.02, 'light_lux': 854.28, 'movement_detected': False, 'status': 'warning'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064345.197877, 'temperature_celsius': 20.08, 'light_lux': 895.39, 'movement_detected': True, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 13 at time: 1751064346.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 24.89 °C
+Particles reporting: 10
+Particles with 'warning' status: 3
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'battery_level': 33.17, 'environmental_hazard_detected': True, 'signal_strength_dbm': -63, 'timestamp': 1751064346.1980999}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064346.1979337, 'temperature_celsius': 25.78, 'light_lux': 496.67, 'movement_detected': True, 'status': 'ok'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064346.1979845, 'temperature_celsius': 27.59, 'light_lux': 471.18, 'movement_detected': False, 'status': 'warning'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 14 at time: 1751064347.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 26.21 °C
+Particles reporting: 10
+Particles with 'warning' status: 0
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 3
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064347.1980176, 'battery_level': 72.71, 'environmental_hazard_detected': True, 'signal_strength_dbm': -89}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064347.1981049, 'temperature_celsius': 28.99, 'light_lux': 195.48, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064347.1981287, 'temperature_celsius': 25.29, 'light_lux': 862.87, 'movement_detected': True, 'status': 'ok'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 15 at time: 1751064348.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 22.68 °C
+Particles reporting: 10
+Particles with 'warning' status: 1
+Particles with 'error' status: 1
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 1
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064348.198052, 'battery_level': 33.73, 'environmental_hazard_detected': False, 'signal_strength_dbm': -59}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064348.1981385, 'temperature_celsius': 23.9, 'light_lux': 668.35, 'movement_detected': True, 'status': 'ok'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064348.198163, 'temperature_celsius': 25.5, 'light_lux': 457.88, 'movement_detected': True, 'status': 'error'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 16 at time: 1751064349.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMTAsQmF0OjYzLjU4LEhhejpGYW...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 22.96 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 2
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 1
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064349.1984024, 'battery_level': 28.71, 'environmental_hazard_detected': True, 'signal_strength_dbm': -87}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064349.1984756, 'temperature_celsius': 25.11, 'light_lux': 337.95, 'movement_detected': False, 'status': 'warning'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064349.1984951, 'temperature_celsius': 21.12, 'light_lux': 998.13, 'movement_detected': True, 'status': 'warning'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 17 at time: 1751064350.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMTAsQmF0OjcwLjgxLEhhejpUcn...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 25.60 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 3
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064350.1985295, 'battery_level': 48.01, 'environmental_hazard_detected': True, 'signal_strength_dbm': -70}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064350.1986365, 'temperature_celsius': 25.56, 'light_lux': 210.57, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064350.1986575, 'temperature_celsius': 28.54, 'light_lux': 335.64, 'movement_detected': True, 'status': 'warning'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 18 at time: 1751064351.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Simulating complex decoding failure (efficiency: 0.60): COMPLEX:SUQ6cGFydGljbGVfMSxCYXQ6MTAuODQsSGF6OlRydW...
+Decoder successfully processed 9 valid data entries this interval.
+
+--- Analysis of 9 data points ---
+Average Temperature: 24.52 °C
+Particles reporting: 9
+Particles with 'warning' status: 2
+Particles with 'error' status: 1
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 9 data points.
+Particles reported data: ['particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 9
+Potential environmental hazards detected: 2
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_2', 'timestamp': 1751064351.1988273, 'temperature_celsius': 20.93, 'light_lux': 559.95, 'movement_detected': True, 'status': 'warning'}
+  2: {'particle_id': 'particle_3', 'timestamp': 1751064351.1989453, 'temperature_celsius': 30.0, 'light_lux': 124.91, 'movement_detected': True, 'status': 'ok'}
+  3: {'particle_id': 'particle_4', 'battery_level': 41.98, 'environmental_hazard_detected': True, 'signal_strength_dbm': -57, 'timestamp': 1751064351.199175}
+--- End of Decoder Output ---
+
+--- Simulation Interval 19 at time: 1751064352.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 26.42 °C
+Particles reporting: 10
+Particles with 'warning' status: 4
+Particles with 'error' status: 1
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 4
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'timestamp': 1751064352.1987703, 'battery_level': 58.44, 'environmental_hazard_detected': True, 'signal_strength_dbm': -66}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064352.1988664, 'temperature_celsius': 29.63, 'light_lux': 916.0, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064352.1988947, 'temperature_celsius': 28.9, 'light_lux': 128.23, 'movement_detected': True, 'status': 'warning'}
+--- End of Decoder Output ---
+
+--- Simulation Interval 20 at time: 1751064353.20 ---
+Simulated reception of 10 raw data entries from the swarm.
+Decoder successfully processed 10 valid data entries this interval.
+
+--- Analysis of 10 data points ---
+Average Temperature: 25.32 °C
+Particles reporting: 10
+Particles with 'warning' status: 2
+Particles with 'error' status: 4
+--- End of Analysis ---
+
+--- Master Decoder Output ---
+Successfully decoded and processed 10 data points.
+Particles reported data: ['particle_1', 'particle_2', 'particle_3', 'particle_4', 'particle_5', 'particle_6', 'particle_7', 'particle_8', 'particle_9', 'particle_10']
+Total unique particles reporting: 10
+Potential environmental hazards detected: 3
+Particles with low battery: 0
+
+Sample Decoded Data Points:
+  1: {'particle_id': 'particle_1', 'battery_level': 68.94, 'environmental_hazard_detected': False, 'signal_strength_dbm': -50, 'timestamp': 1751064353.1992536}
+  2: {'particle_id': 'particle_2', 'timestamp': 1751064353.1990407, 'temperature_celsius': 23.65, 'light_lux': 964.55, 'movement_detected': False, 'status': 'error'}
+  3: {'particle_id': 'particle_3', 'timestamp': 1751064353.1991029, 'temperature_celsius': 26.91, 'light_lux': 159.47, 'movement_detected': False, 'status': 'error'}
+--- End of Decoder Output ---
+
+Master Engineering Decoder Microelectronics Device Simulation Finished.
