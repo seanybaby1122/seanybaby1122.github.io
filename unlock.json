@@ -1,0 +1,174 @@
+# prompt: act like a master Coder Guru create the most robust boot strap that collects everything anything Any term: You can call unlock("ANYTHING").
+# 	•	📝 Optional metadata: You can add a description or category.
+# 	•	💾 Persistent: Saves everything in unlocks.json.
+# 	•	🧠 Meta-conditions: You can easily extend check_meta_unlocks() for any logic.
+# 	•	🏗️ Flexible structure: You can store more fields as needed.
+# 	•	✨ Universal unlocker: Not limited to badges—cheats, benefits, anything.
+# ⸻
+# 🔥 Extra Tips
+# 	•	If you want to auto-generate descriptions, replace: create more complex achievements (e.g., unlock a meta-item when you have unlocked all “Cheat” category items), just expand check_meta_unlocks() Add custom category auto-grouping?
+# 	•	Generate unlock reports or stats?
+# 	•	Build an achievement dashboard?
+# 	•	Or port this into your Symbolic OS? also provide a list of everything. Thank you
+
+import json
+import os
+from datetime import datetime
+
+# Configuration
+UNLOCKS_FILE = "unlocks.json"
+
+class UnlockManager:
+    def __init__(self, unlocks_file=UNLOCKS_FILE):
+        self.unlocks_file = unlocks_file
+        self.unlocks = self.load_unlocks()
+
+    def load_unlocks(self):
+        """Loads unlocks from the JSON file."""
+        if os.path.exists(self.unlocks_file):
+            with open(self.unlocks_file, 'r') as f:
+                try:
+                    return json.load(f)
+                except json.JSONDecodeError:
+                    print(f"Warning: Could not decode {self.unlocks_file}. Starting with empty unlocks.")
+                    return {}
+        else:
+            return {}
+
+    def save_unlocks(self):
+        """Saves the current state of unlocks to the JSON file."""
+        with open(self.unlocks_file, 'w') as f:
+            json.dump(self.unlocks, f, indent=2)
+
+    def unlock(self, item_key, description=None, category=None):
+        """
+        Unlocks an item.
+
+        Args:
+            item_key (str): The unique key for the item.
+            description (str, optional): A description for the unlocked item.
+            category (str, optional): A category for the unlocked item.
+        """
+        if item_key not in self.unlocks:
+            self.unlocks[item_key] = {
+                "unlocked_at": datetime.now().isoformat(),
+                "description": description,
+                "category": category,
+                "meta": {} # Reserved for meta-unlock conditions or data
+            }
+            print(f"UNLOCKED: {item_key}")
+            if description:
+                print(f"  Description: {description}")
+            if category:
+                print(f"  Category: {category}")
+            self.save_unlocks()
+            self.check_meta_unlocks() # Check for meta-unlocks after any unlock
+        else:
+            print(f"Already unlocked: {item_key}")
+
+    def is_unlocked(self, item_key):
+        """Checks if an item is unlocked."""
+        return item_key in self.unlocks
+
+    def get_unlock_details(self, item_key):
+        """Gets details for a specific unlocked item."""
+        return self.unlocks.get(item_key)
+
+    def list_unlocks(self):
+        """Lists all unlocked items."""
+        if not self.unlocks:
+            print("No items unlocked yet.")
+            return []
+
+        print("\n--- Unlocked Items ---")
+        unlocked_list = []
+        for key, details in self.unlocks.items():
+            unlocked_list.append((key, details))
+            print(f"- {key}")
+            if details.get('description'):
+                print(f"  Description: {details['description']}")
+            if details.get('category'):
+                print(f"  Category: {details['category']}")
+            print(f"  Unlocked At: {details.get('unlocked_at', 'N/A')}")
+        print("----------------------")
+        return unlocked_list
+
+    def check_meta_unlocks(self):
+        """
+        Checks for conditions that trigger meta-unlocks.
+        Extend this method to define your meta-unlock logic.
+        """
+        # Example Meta-Unlock: Unlock a "Master Collector" badge if you have unlocked 3 items
+        if len(self.unlocks) >= 3 and not self.is_unlocked("Meta_MasterCollector"):
+            self.unlock("Meta_MasterCollector", description="Unlocked 3 or more items!", category="Meta Badge")
+
+        # Example Meta-Unlock: Unlock "Cheat Sheet Enthusiast" if you have unlocked all items in the "Cheat" category
+        cheat_unlocks = [key for key, details in self.unlocks.items() if details.get('category') == 'Cheat']
+        # This condition is basic - you'd need a definitive list of 'Cheat' items
+        # For simplicity, let's assume if you have more than 1 'Cheat' item, you get this badge
+        if len(cheat_unlocks) > 1 and not self.is_unlocked("Meta_CheatSheetEnthusiast"):
+             self.unlock("Meta_CheatSheetEnthusiast", description="Unlocked multiple items in the 'Cheat' category.", category="Meta Badge")
+
+        # Add more meta-unlock conditions here as needed
+        # if condition_met and not self.is_unlocked("Meta_YourNewUnlock"):
+        #    self.unlock("Meta_YourNewUnlock", description="...", category="...")
+
+
+# --- Usage Example ---
+
+# Initialize the unlock manager
+unlock_manager = UnlockManager()
+
+# Simulate unlocking various things
+print("Attempting to unlock 'FirstSteps'")
+unlock_manager.unlock("FirstSteps", description="Completed your initial setup.")
+
+print("\nAttempting to unlock 'DailyLoginBonus_Day1'")
+unlock_manager.unlock("DailyLoginBonus_Day1", description="Claimed your first daily bonus.", category="Bonus")
+
+print("\nAttempting to unlock 'Cheat_SkipLevel1'")
+unlock_manager.unlock("Cheat_SkipLevel1", description="Used a cheat to skip level 1.", category="Cheat")
+
+print("\nAttempting to unlock 'FirstSteps' again")
+unlock_manager.unlock("FirstSteps", description="This won't unlock again.")
+
+print("\nAttempting to unlock 'Achievement_Explorer'")
+unlock_manager.unlock("Achievement_Explorer", description="Explored a new area.", category="Achievement")
+
+print("\nAttempting to unlock 'Cheat_InfiniteLives'")
+unlock_manager.unlock("Cheat_InfiniteLives", description="Activated infinite lives cheat.", category="Cheat")
+
+
+# List all unlocked items
+unlock_manager.list_unlocks()
+
+# Check details of a specific unlock
+print("\nDetails for 'Cheat_SkipLevel1':")
+print(unlock_manager.get_unlock_details("Cheat_SkipLevel1"))
+
+# Check if an item is unlocked
+print(f"\nIs 'SecretItem' unlocked? {unlock_manager.is_unlocked('SecretItem')}")
+print(f"Is 'FirstSteps' unlocked? {unlock_manager.is_unlocked('FirstSteps')}")
+
+# You can call unlock("ANYTHING") at any point in your code
+# Example: In a game loop, after a task is completed:
+# if task_completed("DefeatedBoss"):
+#    unlock_manager.unlock("BossDefeated_Level1", description="Defeated the boss of Level 1!")
+
+# Example: Based on a user command or system event:
+# if user_enters_secret_code("KONAMI"):
+#    unlock_manager.unlock("Cheat_KonamiCode", description="Entered the legendary Konami Code!", category="Cheat")
+
+# Example of calling unlock with a generic term
+unlock_manager.unlock("RandomEvent_MysteriousBox", description="Found a mysterious box.")
+
+
+# List unlocks again to see any new meta-unlocks
+unlock_manager.list_unlocks()
+
+# To access the raw unlock data directly if needed:
+# print("\nRaw unlock data:")
+# print(unlock_manager.unlocks)
+
+# The unlocks are persisted in unlocks.json
+
